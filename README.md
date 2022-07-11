@@ -1,7 +1,4 @@
-# WIP!!
 # Parameter Based ERC20 Vesting Vault
-
----
 
 ## Use Cases
 An ERC20 token wrapper that linearly vests underlying token based on the values obtained from an external contract.  
@@ -27,19 +24,31 @@ Allows for a liquid vesting position that can be sold on a secondary market whil
 ---
 
 ## Requirements 
-- Foundry 
- 
-## Installation
-- Clone repository
-- Create the `IExternalInterface.sol` for the target contract and function call
+
+Foundry/Forge: https://book.getfoundry.sh/getting-started/installation.html
+```
+# Clone repo
+- Create the `IExternalInterface.sol` for the target contract
+- An example is included
+
+# Install forge dependencies
+forge install
+
+# Compile code
+forge build
+
+# Run tests
+forge test
+```
 
 ---
 
-## License
-This code is *NOT* audited! There are no warranties or assurances that this will work as expected!
-Use only on testnet, since there are no tokens of value there.
+## License & Notices
+This code is *NOT* audited! There are no warranties or assurances that this will work as expected!  
+Use at your own risk!
 
-MIT
+License: MIT
 
+---
 ## Contributing
 If you do use it for something, would definitely be interested in seeing how you utilized it and if there are enhancements that could be made to the basic vault, open a PR and let's take a look!
